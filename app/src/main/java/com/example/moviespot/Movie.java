@@ -1,12 +1,13 @@
 package com.example.moviespot;
 
-public class Movie{
-    private String mTitle,mRating,mPoster,mReleaseDate,mOverView,mCast;
+import java.io.Serializable;
+
+public class Movie implements Serializable {
+    private String mTitle,mVoteAverage,mVoteCount,mPoster,mReleaseDate,mOverView,mCast,mPopularity,;
     private int mId;
 
-    public MovieModel(String mTitle,String mRating,String mPoster,String mReleaseDate,String mOverView,String mCast){
+    public Movie(String mTitle,String mRating,String mPoster,String mReleaseDate,String mOverView,String mCast){
         this.mTitle = mTitle;
-        this.mRating = mRating;
         this.mPoster = mPoster;
         this.mReleaseDate = mReleaseDate;
         this.mOverView = mOverView;
@@ -33,12 +34,20 @@ public class Movie{
         this.mCast = mCast;
     }
 
-    public void setmRating(String mRating) {
-        this.mRating = mRating;
-    }
-
     public void setmReleaseDate(String mReleaseDate) {
         this.mReleaseDate = mReleaseDate;
+    }
+
+    public void setmPopularity(String mPopularity) {
+        this.mPopularity = mPopularity;
+    }
+
+    public void setmVoteAverage(String mVoteAverage) {
+        this.mVoteAverage = mVoteAverage;
+    }
+
+    public void setmVoteCount(String mVoteCount) {
+        this.mVoteCount = mVoteCount;
     }
 
     public int getmId() {
@@ -57,9 +66,6 @@ public class Movie{
         return mPoster;
     }
 
-    public String getmRating() {
-        return mRating;
-    }
 
     public String getmCast() {
         return mCast;
@@ -67,5 +73,17 @@ public class Movie{
 
     public String getmReleaseDate() {
         return mReleaseDate;
+    }
+
+    public String getmVoteAverage() {
+        return mVoteAverage;
+    }
+
+    public String getmPopularity() {
+        return mPopularity;
+    }
+
+    public String getmVoteCount() {
+        return mVoteCount;
     }
 }
