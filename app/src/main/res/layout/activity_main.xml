@@ -7,18 +7,12 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-<GridView
-    android:id="@+id/movies_grid"
+<androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/rv_movies"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center_horizontal"
-    android:columnWidth="@dimen/grid_col_width"
-    android:numColumns="auto_fit"/>
-    <ProgressBar
-        android:id="@+id/movies_progress_bar"
-        android:layout_width="@dimen/progress_bar"
-        android:layout_height="@dimen/progress_bar"
-        android:visibility="invisible" />
+    />
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
