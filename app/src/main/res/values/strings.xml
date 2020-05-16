@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">MovieSpot</string>
+    <string name="baseURL">http://api.themoviedb.org/3/discover/movie</string>
+    <string name="apiKey">a25592d6509c51f48ff31ed09207fbaf</string>
 </resources>
